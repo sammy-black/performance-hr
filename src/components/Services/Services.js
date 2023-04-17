@@ -1,4 +1,3 @@
-import { Grid } from "@mui/material";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import "./Services.css";
 import agile from "../../assets/images/agile.png";
@@ -43,19 +42,20 @@ const Services = () => {
         all competencies needed to get the job done.
       </p>
 
-      <Grid container gap={2} columns={{xs: 12, sm: 12, md: 16 }} className="service-items">
+      <div className="row service-items">
         {servicesData.map((service) => {
           return (
-            <Grid key={service.title} item  xs={12} sm={5} md>
+            <div className="col-12 col-sm-5 col-md-4 col-lg-3">
               <ServiceCard
                 icon={service.icon}
                 title={service.title}
                 desc={service.desc}
               />
-            </Grid>
+            </div>
           );
         })}
-      </Grid>
+      </div>
+   
     </section>
   );
 };

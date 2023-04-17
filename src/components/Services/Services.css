@@ -1,5 +1,6 @@
 #services{
     text-align: center;
+    padding:  5% 8%;
 }
 
 .service-title{
@@ -18,8 +19,26 @@
     justify-content: center;
 }
 
+@media (min-width: 770px)  and (max-width: 1237px) {
+
+    .service-items{
+        gap: 20px;
+    }
+     .service-title{
+        width: 80%;
+     }
+
+     .service-desc{
+        width: 74%;
+     }
+}
+
 
 @media (max-width: 769px) {
+
+    .service-items{
+        gap: 20px;
+    }
 
     #services{
         padding-bottom: 5rem;
