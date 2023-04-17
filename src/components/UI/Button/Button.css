@@ -1,0 +1,22 @@
+.btn {
+  background: #f3723f;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 25px 15px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.btn img {
+  height: 12.5px;
+  width: 15.5px;
+  margin-left: 5px;
+}
+
+.btn:hover {
+  background: #118cc0;
+  color: white;
+}

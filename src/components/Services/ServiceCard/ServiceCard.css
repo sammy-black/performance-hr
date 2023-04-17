@@ -1,0 +1,50 @@
+.service-card {
+  width: 75%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 4px 30px 0px #0000000d;
+  padding: 30px;
+  border-radius: 14px;
+  margin: 0 auto;
+}
+
+.card-icon img {
+  height: 62px;
+  width: 62px;
+}
+
+.card-desc p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (min-width: 1025px)  {
+     .service-card{
+        width: 67%;
+     }
+}
+
+
+@media (max-width: 600px) {
+     .service-card{
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 70%;
+     }
+
+     .card-title h3{
+        font-size: 18px;
+     }
+
+}
+
+@media (max-width: 500px) {
+    .service-card{
+        width: 80%;
+     }
+
+}
+

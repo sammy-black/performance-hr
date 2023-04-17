@@ -1,0 +1,39 @@
+#call-action-one h2 {
+  text-align: left;
+}
+
+.left-text {
+  width: 70%;
+  margin-bottom: 85px;
+}
+
+.right-container {
+  padding-left: 11%;
+}
+
+@media (max-width: 900px) {
+
+ #call-action-one{
+    padding: 8% 0;
+ }
+
+  .right-container {
+    margin-top: 80px !important;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 631px) {
+  #call-action-one h2 {
+    width: 85%;
+  }
+  .left-text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .left-text {
+    margin: 50px 0;
+  }
+}

@@ -1,0 +1,41 @@
+.accordion .MuiPaper-elevation {
+  background-color: transparent !important;
+  box-shadow: none;
+  border-bottom: 1.5px solid #99999926;
+}
+
+.accordion .MuiAccordionSummary-root {
+  padding: 0;
+}
+
+.MuiTypography-body1.accordion-title {
+  padding: 15px 0;
+  font-family: Be Vietnam Pro;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: black;
+}
+.MuiTypography-body1.accordion-desc {
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.accordion .MuiAccordionDetails-root {
+  padding: 0 0 25px 0;
+}
+
+
+@media (max-width: 631px) {
+ 
+
+    .MuiTypography-body1.accordion-title {
+        font-size: 18px;
+      }
+
+    .MuiTypography-body1.accordion-desc {
+        font-size: 14px;
+      }
+}
