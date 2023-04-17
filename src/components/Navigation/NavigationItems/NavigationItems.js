@@ -5,19 +5,46 @@ const NavigationItems = (props) => {
     {
       title: "Products",
       columns: [
-        { details: ["Beta", "Blog", "Playground", "Pro Version"] },
-        { details: ["Lunching Now", "Marketing", "Adverts", "Media Cover"] },
-        { details: ["Buy", "Test", "Explore", "Rent"] },
+        {
+          details: [
+            {
+              title: "Talent Sourcing",
+              url: "/",
+            },
+            { title: "Payroll Mgmt", url: "/" },
+          ],
+        },
+        {
+          details: [
+            { title: "Core-HR", url: "/" },
+            { title: "Performance", url: "https://performance-hr.netlify.app" },
+          ],
+        },
+        { details: [{ title: "Attendance", url: "/" }] },
       ],
     },
     {
       title: "Company",
       columns: [
         {
-          details: ["About Us", "Library", "Resources", "Newsletter"],
+          details: [
+            { title: "About Us", url: "/" },
+            { title: "Blog", url: "/" },
+            { title: "Terms of Service", url: "/" },
+          ],
         },
-        { details: ["Partners", "License", "Contact Us", "Support Center"] },
-        { details: ["FAQs", "Privacy", "Request", "Vision"] },
+        {
+          details: [
+            { title: "Contact Us", url: "" },
+            { title: "Support Center", url: "/" },
+          ],
+        },
+        {
+          details: [
+            { title: "FAQs", url: "" },
+            { title: "Privacy", url: "/" },
+          ],
+        },
       ],
     },
   ];
@@ -37,8 +64,8 @@ const NavigationItems = (props) => {
                   <ul key={index * Math.random()} className="p-2">
                     {column.details.map((list) => {
                       return (
-                        <li key={list}>
-                          <a href="/#">{list}</a>
+                        <li key={list.title}>
+                          <a href={list.url}>{list.title}</a>
                         </li>
                       );
                     })}

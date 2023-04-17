@@ -45,7 +45,7 @@ const Services = () => {
       <div className="row service-items">
         {servicesData.map((service) => {
           return (
-            <div className="col-12 col-sm-5 col-md-4 col-lg-3">
+            <div  key={service.title} className="col-12 col-sm-5 col-md-4 col-lg-3">
               <ServiceCard
                 icon={service.icon}
                 title={service.title}
